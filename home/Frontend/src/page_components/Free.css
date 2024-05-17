@@ -1,0 +1,149 @@
+/* Free.css */
+
+.time-and-offer-container {
+  background-color: #1d7609;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-counter {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  padding: 20px;
+}
+
+.container-70 {
+  width: 70%;
+  padding: 20px;
+  position: relative;
+}
+
+.container-30 {
+  width: 30%;
+  padding: 20px;
+  height: 100%;
+  background-color: black;
+  color:white;
+  border-radius: 8px;
+  transition: width 0.5s ease;
+  overflow: hidden;
+}
+
+.container-30:hover {
+  width: 50%;
+}
+
+.content {
+  animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.company-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.company-container:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.company-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.company span {
+  font-size: 1rem;
+  color: white;
+}
+
+.rating-quote {
+  font-size: 0.8rem;
+  color: #eee;
+}
+
+.third-container {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  transition: bottom 0.5s ease;
+}
+
+.main-container:hover .third-container {
+  bottom: 0;
+}
+
+/* Button styles */
+.buy-now-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #006400; /* Dark green background */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add margin top to separate from other content */
+}
+
+.buy-now-button:hover {
+  background-color: #004d00; /* Darker green on hover */
+}
+
+/* Cost container styles */
+.cost {
+  margin-bottom: 20px;
+}
+
+.original-price {
+  color: #555;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.discount {
+  color: #006400;
+  font-weight: bold;
+}

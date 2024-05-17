@@ -1,0 +1,59 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.about-us-container {
+  background-color: #f0f8ea; /* Light green background */
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 20px; /* Curved boundaries */
+  border: 2px solid #800000; /* Dark red border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  margin: 20px auto; /* Center the container horizontally and add space around it */
+  max-width: 1400px; /* Limit the maximum width of the container */
+  font-size: 20px; /* Increased font size */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font family */
+}
+
+.about-us-container:hover {
+  transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+.about-us-container h2 {
+  color: #004d00; /* Dark green text color for the heading */
+  margin-bottom: 20px; /* Add more space below the heading */
+  text-align: center; /* Center align the heading */
+  font-size: 48px; /* Increased font size for the heading */
+  font-weight: 700; /* Bold font weight for the heading */
+  text-transform: uppercase; /* Convert heading text to uppercase */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for a subtle effect */
+}
+
+.about-us-container p {
+  color: #333; /* Dark text color for the paragraph */
+  line-height: 1.6; /* Increased line height for better readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add text shadow for a subtle effect */
+}
+
+.about-us-container a {
+  color: #800000; /* Dark red color for links */
+  text-decoration: underline; /* Underline links */
+}
+
+.about-us-container a:hover {
+  color: #400000; /* Darken link color on hover */
+}
+
+.about-us-container .info-list {
+  margin-top: 20px; /* Add space above the list */
+}
+
+.about-us-container .info-list li {
+  list-style-type: none; /* Remove bullet points from list items */
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.about-us-container .info-list li::before {
+  content: '•'; /* Use a bullet point as list item marker */
+  color: #800000; /* Dark red bullet point color */
+  margin-right: 5px; /* Add space between bullet point and text */
+}

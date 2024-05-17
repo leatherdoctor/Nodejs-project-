@@ -1,0 +1,62 @@
+.recommendations-container {
+    background-color: rgb(9, 67, 9); /* Dark green background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease; /* Fade in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .recommendations-container p {
+    margin: 10px 0; /* Add some margin to the paragraphs */
+    font-size: 18px; /* Increase font size for better readability */
+  }
+  
+  .login-button {
+    background-color: #6c6277; /* Dark blue button background color */
+    color: #fff; /* Button text color */
+    padding: 12px 24px;
+    border: 2px solid #1a2b3c; /* Button border */
+    border-radius: 30px; /* Rounded border */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Added transform for animation */
+    font-size: 16px; /* Button font size */
+    font-weight: bold; /* Button font weight */
+  }
+  
+  .login-button:hover {
+    background-color: #0e1cd9; /* Hover background color */
+    color: #fff; /* Hover text color */
+    border-color: #d6e7f8; /* Hover border color */
+    transform: scale(1.1); /* Scale up on hover */
+    animation: pulse 1s infinite alternate; /* Pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Additional styles */
+  
+  .recommendations-container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+  
+  .login-button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+  

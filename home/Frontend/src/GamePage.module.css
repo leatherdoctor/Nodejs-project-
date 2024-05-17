@@ -1,0 +1,218 @@
+/* GamePage.module.css */
+
+/* GamePage.module.css */
+
+.container {
+    background-color: #243332; /* Dark green background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for container */
+    margin-bottom: 20px;
+    text-align: center; /* Center align content */
+}
+
+.game-name-container {
+    text-align: center; /* Center-align the game name */
+    margin-top: 20px; /* Add top margin to create space */
+}
+
+.game-name {
+    font-size: 5rem; /* Set a large font size for the game name */
+    color: #bdffb1; /* Set the color of the game name to a golden/yellow shade */
+    text-transform: uppercase; /* Convert text to uppercase for emphasis */
+    font-weight: bold; /* Make the font weight bold for emphasis */
+    letter-spacing: 2px; /* Add letter spacing for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth and contrast */
+    padding: 10px 20px; /* Add padding to increase visibility and size */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #243332; /* Dark green background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth hover effect */
+}
+.game-name:hover {
+    transform: scale(1.05); /* Scale up the game name on hover for interactive effect */
+}
+
+.game-details {
+    margin-top: 20px;
+}
+
+.game-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center-align the image */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+.game-image {
+    width: 1000px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.requirements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.requirements-table th,
+.requirements-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.requirements-table th {
+    background-color: #243332;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Existing styles remain unchanged */
+
+.container {
+    /* Add styles for single-line display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.details-container {
+    /* Add styles for single-line display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-info {
+    /* Add styles for single-line display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.game-description,
+.game-type,
+.cost {
+    /* Increase font size for better visibility */
+    font-size: 18px;
+}
+
+.cost-container {
+    /* Add styles for single-line display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Existing styles remain unchanged */
+
+.game-description {
+    /* Add styles for big text */
+    font-size: 24px;
+    font-weight: bold;
+    color: #09cd54; /* Set text color */
+    text-transform: uppercase; /* Convert text to uppercase for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth and contrast */
+    padding: 10px 20px; /* Add padding for visibility */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #243332; /* Dark green background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.game-description:hover {
+    transform: scale(1.05); /* Scale up the description on hover for interactive effect */
+    background-color: #909acd; /* Change background color on hover */
+    color: #243332; /* Change text color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Adjust box shadow on hover */
+}
+
+/* Existing styles remain unchanged */
+
+.strikethrough {
+    text-decoration: line-through; /* Add strikethrough effect */
+}
+
+.original-cost {
+    font-size: 18px; /* Set font size for original cost */
+    color: #ff0000; /* Set color for original cost */
+}
+
+/* Existing styles remain unchanged */
+
+.buy-button {
+    /* Add styles for the button */
+    background-color: #4caf50; /* Green background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for button size */
+    font-size: 18px; /* Set font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-top: 20px; /* Add top margin for spacing */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+    color: #fff; /* Text color on hover */
+    transform: scale(1.05); /* Scale up the button on hover for interactive effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Adjust box shadow on hover */
+}
+
+.buy-button:active {
+    transform: scale(0.95); /* Scale down the button when active (clicked) */
+    box-shadow: none; /* Remove box shadow when active (clicked) */
+}
+
+.buy-button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+/* Add animation for button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite; /* Apply pulse animation to the button */
+}

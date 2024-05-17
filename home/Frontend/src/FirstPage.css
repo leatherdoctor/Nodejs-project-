@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0,0,0,0;
+    padding: 0;
+    background: linear-gradient(45deg, black, white, darkgreen);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite, lightning 5s infinite;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    opacity: 0;
+    animation: fadeIn 10s ease-in-out forwards;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Add drop shadow effect */
+    width: 300px; /* Adjust the width to make the logo larger */
+    height: auto; /* Maintain aspect ratio */
+    color: black; /* Initial text color */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes lightning {
+    0% {
+      color: black;
+    }
+    25% {
+      color: white;
+    }
+    50% {
+      color: darkgreen;
+    }
+    100% {
+      color: darkgreen;
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.94), 
+        0 0 20px rgb(19, 7, 1), 
+        0 0 30px white, 
+        0 0 40px white, 
+        0 0 50px rgb(35, 243, 20), 
+        0 0 60px white, 
+        0 0 70px rgb(231, 7, 7);
+    }
+  }
+   

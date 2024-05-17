@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f3d0f; /* Dark green background color for the whole page */
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text color */
+}
+
+.card-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px; /* Add padding for spacing */
+    animation: fadeIn 1s ease-in-out; /* Animation when the page loads */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #225522; /* Darker green background color for cards */
+    color: #fff; /* White text color */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+    animation: fadeInCard 0.5s ease-in-out; /* Animation for cards */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #225522; /* Darker green background color for the heading */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.action-container {
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+

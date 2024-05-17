@@ -1,0 +1,133 @@
+/* Game_Card.css */
+
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.card {
+    background-color: #000; /* Set card background to black */
+    color: #fff; /* Set text color to white */
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff; /* Set title color to white */
+}
+
+.card-text {
+    color: #ccc; /* Set text color to light gray */
+    font-size: 16px;
+}
+
+.card-description {
+    color: #aaa; /* Set description color to a lighter gray */
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff; /* Blue color for price */
+    text-decoration: line-through; /* Add line through the actual price */
+}
+
+.discount {
+    color: #dc3545; /* Red color for discount */
+    font-size: 24px; /* Increase font size for discount */
+    font-weight: bold; /* Make discount text bold */
+    margin-top: 5px; /* Add some top margin to discount text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for emphasis */
+    animation: pulse 1s infinite alternate; /* Add pulsating animation effect */
+}
+
+.discount-percent {
+    color: #218c74; /* Dark green color for discount percentage */
+    font-size: 24px; /* Increase font size for discount percentage */
+    font-weight: bold; /* Make discount percentage text bold */
+}
+
+/* Pulsating animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(5.5);
+    }
+}
+
+/* Carousel navigation buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+}
+
+.carousel-control-prev {
+    left: -25px;
+}
+
+.carousel-control-next {
+    right: -25px;
+}

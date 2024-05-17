@@ -1,0 +1,78 @@
+.carousel-container {
+    max-width: 500px; /* Adjust the max-width as needed */
+    height: 70vh; /* Set the height to 50% of the viewport height */
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    height: 500px; /* Adjust the height of each slide as needed */
+    overflow: hidden; /* Hide any overflow from the images */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 1350px; /* Ensure the image fills the entire slide */
+    object-fit: cover; /* Maintain aspect ratio and cover entire slide */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Adjust the width of control buttons */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none; /* Remove default icon background image */
+    color: white; /* Icon color */
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Change the color of inactive dots */
+    border-radius: 50%; /* Make dots circular */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: white; /* Change the color of active dot */
+  }
+  .carousel-caption {
+    color: #cbffda; /* Change text color to white */
+  }
+  
+ 
+ 
+  
+  

@@ -1,0 +1,71 @@
+/* ScrollerContainer.module.css */
+
+.scrollerContainer {
+    position: relative;
+    width: 60%; /* Adjusted width */
+    height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-top: 60px; /* Add more padding to make space for the heading */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+  }
+  
+  
+  .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Increase padding for more space */
+    background-color: #006400; /* Dark green background */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add space below the heading */
+    border-radius: 5px; /* Add some border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  }
+  
+  .cardsWrapper {
+    padding: 10px;
+  }
+  
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add more space between cards */
+  }
+  
+  .card {
+    display: flex;
+    background-color: #d2b48c; /* Brownish wood color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition animation */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+  }
+  
+  .cardImage {
+    width: 20%; /* Set width for image */
+
+  }
+  
+  .cardImage img {
+    width: 100%; /* Ensure image fills the container */
+  }
+  
+  .cardContent {
+    flex: 1; /* Expand content to fill remaining space */
+    padding: 10px; /* Add padding for content */
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin-bottom: 0;
+  }
+  
